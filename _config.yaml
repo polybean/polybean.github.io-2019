@@ -27,3 +27,8 @@ disqus_shortname:
 
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
+# https://github.com/jekyll/jekyll/issues/920
+# collections:
+#   tags:
+#     output: true
+# permalink: /tags/:tag.html

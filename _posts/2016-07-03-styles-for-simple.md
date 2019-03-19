@@ -2,7 +2,7 @@
 layout: post
 title: Styles at a glance
 category: jekyll
-description: Simple is a beautiful but functional jekyll theme. The font-type setting looks really good when writers use CJK mixed with English.
+tags: [MongoDB, M101, React, Docker, Kubernetes, Python]
 ---
 
 Simple is a beautiful but functional jekyll theme. The font-type setting looks really good when writers use CJK mixed with English.

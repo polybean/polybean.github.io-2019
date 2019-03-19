@@ -1,0 +1,10 @@
+---
+layout: default
+title: Tags
+---
+
+{% for tag in site.tags %}
+  <a href="/tags/{{ tag[0] }}.html">
+    <code class="highligher-rouge"><nobr>{{ tag[0] }}</nobr></code>
+  </a>
+{% endfor %}

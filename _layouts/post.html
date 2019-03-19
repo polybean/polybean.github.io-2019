@@ -15,8 +15,17 @@ layout: default
         ><span itemprop="name">{{ page.author }}</span></span
       >{% endif %}
     </p>
+    <div>
+      {% for tag in page.tags %}
+      <a href="/tags/{{ tag }}.html"
+        ><code class="highligher-rouge"
+          ><nobr>{{ tag }}</nobr></code
+        ></a
+      >
+      {% endfor %}
+    </div>
   </header>
-
+  <hr />
   <div class="article-content" itemprop="articleBody">
     {{ page.content }}
   </div>
