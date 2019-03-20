@@ -22,8 +22,8 @@ kramdown:
 
 # Third-party services
 # just leave someone empty to disable it
-# google_analytics:
-disqus_shortname:
+google_analytics: true
+disqus_shortname: polybean
 
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
