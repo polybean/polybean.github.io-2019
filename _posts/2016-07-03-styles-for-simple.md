@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Styles at a glance
 tags: [MongoDB, M101, React, Docker, Kubernetes, Python]
 ---
