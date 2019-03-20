@@ -1,11 +1,7 @@
 ---
 layout: page
-title: About
+title: 关于集豆
 permalink: /about/
 ---
 
-This is a simple Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/).  Plus, you can find a lot of themes at [jekyllthemes.org](http://jekyllthemes.org/)
-
-You can find the source code for this theme at: <data data-icon="ei-sc-github"></data>  [jekyll-simple](https://github.com/wild-flame/jekyll-simple)
-
-You can find the source code for Jekyll at <data data-icon="ei-sc-github"></data>  [jekyll](https://github.com/jekyll/jekyll)
+每天收集一颗豆子，属于你的丰收一定会萌芽。集豆博客的每一篇博文都会用不长的篇幅讲明白一个与技术相关的内容，让你的碎片时间被充分利用起来。不经意间的成长也许就就在于每天少刷两个短视频，多一次五分钟的思想碰撞。
