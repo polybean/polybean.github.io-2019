@@ -32,9 +32,25 @@ excerpt_separator: <!--description-->
 #   tags:
 #     output: true
 # permalink: /tags/:tag.html
+
 defaults:
   - scope:
       path: _posts
     values:
       layout: post
       comments: true
+
+# Produces a cleaner folder structure when using categories
+permalink: /:year/:month/:title.html
+
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-feed
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/pages/:num/"
+  limit: 0
+  sort_field: date
+  sort_reverse: true
