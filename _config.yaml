@@ -44,13 +44,16 @@ defaults:
 permalink: /:year/:month/:title.html
 
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-feed
+# applicable to jekyll-paginate-v2, not yet supported by github
+# pagination:
+#   enabled: true
+#   per_page: 3
+#   permalink: "/pages/:num/"
+#   limit: 0
+#   sort_field: date
+#   sort_reverse: true
 
-pagination:
-  enabled: true
-  per_page: 3
-  permalink: "/pages/:num/"
-  limit: 0
-  sort_field: date
-  sort_reverse: true
+paginate: 5
+paginate_path: /pages/:num/
