@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Styles at a glance
-category: jekyll
 tags: [MongoDB, M101, React, Docker, Kubernetes, Python]
 ---
 

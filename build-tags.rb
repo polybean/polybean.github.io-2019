@@ -12,7 +12,7 @@ tag: <%= tag %>
 ---
 
 <div>
-<h1>Tag: {{ page.tag }}</h1>
+<h1>{{ page.tag }}</h1>
   <ul>
   {% for post in site.tags[page.tag] %}
     <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
