@@ -57,3 +57,7 @@ plugins:
 
 paginate: 5
 paginate_path: /pages/:num/
+
+albums:
+  - jekyll
+  - jekyll2

@@ -1,0 +1,17 @@
+---
+layout: default
+title: jekyll2
+album: jekyll2
+---
+
+<div>
+<h1>{{ page.album }}</h1>
+  {% assign album = site.posts | where: "album", "jekyll2" %}
+  <ul>
+  {% for post in album %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+      {{ post.description }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
