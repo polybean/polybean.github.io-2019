@@ -41,7 +41,7 @@ defaults:
       comments: true
 
 # Produces a cleaner folder structure when using categories
-permalink: /:year/:month/:title.html
+permalink: /:year/:month/:day/:title.html
 
 plugins:
   - jekyll-paginate
