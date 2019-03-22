@@ -44,7 +44,12 @@ album: <%= album %>
 </div>
 EOF
 
-system "cd #{PROJECT_BASE} && rm -fr albums/* tags/* && bundle exec jekyll build"
+system <<~EOF
+  cd #{PROJECT_BASE}
+  mkdir -p #{PROJECT_BASE}/albums
+  rm -fr albums/* tags/*
+  bundle exec jekyll build
+EOF
 
 page = Nokogiri::HTML(open("#{PROJECT_BASE}/_site/tags.html"))
 page.css(".wrapper a code nobr").each do |el|
