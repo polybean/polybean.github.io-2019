@@ -59,5 +59,4 @@ paginate: 5
 paginate_path: /pages/:num/
 
 albums:
-  - jekyll
-  - jekyll2
+  - 构建Docker镜像
