@@ -1,0 +1,14 @@
+<div>
+  {% assign tags = post.tags %}
+  {% assign album = post.album %} 
+  
+  🏷 
+  {% for tag in post.tags %}
+  <a href="/tags/{{ tag }}.html"><code class="highligher-rouge"><nobr>{{ tag }}</nobr></code></a>
+  {% endfor %} 
+  
+  {% if post.album %}
+  💿
+  <a href="/albums/{{ album }}.html"><code class="highligher-rouge"><nobr>{{ album }}</nobr></code></a>
+  {% endif %}
+</div>
