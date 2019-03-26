@@ -1,5 +1,5 @@
 ---
-title: "[0001]编写第一份Dockerfile"
+title: "0001. [构建Docker镜像]编写第一份Dockerfile"
 tags: ["Docker"]
 album: 构建Docker镜像
 ---
@@ -39,7 +39,7 @@ CMD java -jar target/demo-0.0.1-SNAPSHOT.jar
 使用`docker build`命令构建镜像：
 
 ```bash
-# path = 0001-naive-dockerfile
+# path = 0001-naive-dockerfile/demo
 $ docker build . -t demo:0.0.1-SNAPSHOT
 ```
 
