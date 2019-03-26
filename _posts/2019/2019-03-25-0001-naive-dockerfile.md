@@ -6,9 +6,13 @@ album: 构建Docker镜像
 
 在容器技术普及的今天，我们经常需要为自己编写的应用程序构建 Docker 镜像。今天我们基于一个 Spring Boot 的 Hello World 工程，编写`Dockerfile`，构建第一个 Docker 镜像。
 
-访问[Spring Initializr](https://start.spring.io/)，选择 Reactive Web 作为唯一依赖，生成 Spring Boot 工程。大家可以在与集豆博客[配套的示例代码仓库](https://github.com/polybean/polybean)中找到本文对应的样例工程（位于目录`0001-naive-dockerfile`中）。
+<!--more-->
 
-![Create Spring Boot Project]({{site.baseurl}}/assets/images/0001/spring-initializr.png)
+本文对应的示例代码可以在[集豆示例代码仓库](https://github.com/polybean/polybean)的 `0001-naive-dockerfile` 目录中找到。
+
+访问[Spring Initializr](https://start.spring.io/)，选择 Reactive Web 作为唯一依赖，生成 Spring Boot 工程。
+
+![Create Spring Boot Project](/assets/images/0001/spring-initializr.png)
 
 为了在访问路径`/`时，获得`Hello World!`响应，我们需要编写如下的`HomeController`：
 
@@ -49,7 +53,7 @@ $ docker build . -t demo:0.0.1-SNAPSHOT
 $ docker images | grep demo
 ```
 
-![demo-image]({{site.baseurl}}/assets/images/0001/demo-image.png)
+![demo-image](/assets/images/0001/demo-image.png)
 
 通过`docker run`命令启动`demo`镜像的容器：
 
@@ -59,7 +63,7 @@ $ docker run --rm -d -p 8080:8080 demo:0.0.1-SNAPSHOT
 
 使用`curl`命令访问 URL`http://localhost:8080/`，如预期的获得`Hello World!`响应。
 
-![demo-image]({{site.baseurl}}/assets/images/0001/curl-index.png)
+![demo-image](/assets/images/0001/curl-index.png)
 
 至此，我们已经成功的完成了第一个镜像的构建。但是，这份`Dockerfile`存在以下几个显而易见的问题：
 

@@ -4,7 +4,7 @@ tags: ["Docker"]
 album: 构建Docker镜像
 ---
 
-在[第一份 Dockerfile]({{site.baseurl}}/2019/03/25/0001-naive-dockerfile.html)的基础上，我们对这个用 Spring Boot 编写的`demo`工程的镜像构建过程进行改进。
+在[第一份 Dockerfile](/2019/03/25/0001-naive-dockerfile.html)的基础上，我们对这个用 Spring Boot 编写的`demo`工程的镜像构建过程进行改进。
 
 目标：
 
@@ -12,6 +12,8 @@ album: 构建Docker镜像
 2. 镜像瘦身
 
 本文对应的示例代码可以在[集豆示例代码仓库](https://github.com/polybean/polybean)的`0002-improve-naive-dockerfile`目录中找到。
+
+<!--more-->
 
 实际情况中，我们经常会对源代码进行改动，重新构建镜像。比如，如果我们将访问 `demo` 服务首页的问候语从`Hello World!`改为`Goodbye World!`：
 
@@ -46,7 +48,7 @@ $ docker run --rm \
 
 下图展示了通过构建容器构建`demo`服务的过程：
 
-![build-container]({{site.baseurl}}/assets/images/0002/build-container.png)
+![build-container](/assets/images/0002/build-container.png)
 
 在获得通过构建容器构建好的 jar 包之后，通过这份更新后的`Dockerfile`构建镜像：
 
@@ -68,7 +70,7 @@ $ docker build . -t demo:0.0.1-SNAPSHOT
 
 由于使用 Maven 本地镜像的缘故，构建速度得到极大提升；而且因为使用了构建镜像，`demo`服务的依赖包并不存在于镜像中，`demo`服务的镜像大小由 191MB，降至 103MB。
 
-![shrinked-image-size]({{site.baseurl}}/assets/images/0002/shrinked-image-size.png)
+![shrinked-image-size](/assets/images/0002/shrinked-image-size.png)
 
 最终，我们将构建过程整合成一个 Bash 脚本`build-images.sh`：
 

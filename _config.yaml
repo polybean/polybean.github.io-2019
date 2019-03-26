@@ -26,7 +26,7 @@ google_analytics: true
 disqus_shortname: polybean
 
 # used this for post_excerpt at index_page
-excerpt_separator: <!--description-->
+excerpt_separator: <!--more-->
 # https://github.com/jekyll/jekyll/issues/920
 # collections:
 #   tags:
