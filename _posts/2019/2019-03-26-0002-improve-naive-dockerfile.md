@@ -1,6 +1,6 @@
 ---
-title: "0002. [构建Docker镜像]改进第一份Dockerfile"
-tags: ["Docker"]
+title: "0002 - [构建Docker镜像]改进第一份Dockerfile"
+tags: ["Docker", "Spring Boot"]
 album: 构建Docker镜像
 ---
 
