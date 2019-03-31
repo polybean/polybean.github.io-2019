@@ -1,1 +1,3 @@
 - `FROM scratch` && GO
+- maven docker plugin
+- node image -> build context and .dockerignore
