@@ -20,7 +20,7 @@ Webpack 的强大之处在于，它提供了丰富的 loader 和 plugin，你几
 
 首先，我们创建 Node.js 版本的`demo`服务，使用`yarn`初始化工程：
 
-![init-project](/assets/images/0005/init-project.png)
+![init-project](/assets/images/2019/0005/init-project.png)
 
 在`index.js`中编写 Node.js 版本的 Hello World：
 

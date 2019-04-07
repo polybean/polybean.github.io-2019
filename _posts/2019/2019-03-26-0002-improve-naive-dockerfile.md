@@ -48,7 +48,7 @@ $ docker run --rm \
 
 下图展示了通过构建容器构建`demo`服务的过程：
 
-![build-container](/assets/images/0002/build-container.png)
+![build-container](/assets/images/2019/0002/build-container.png)
 
 在获得通过构建容器构建好的 jar 包之后，通过这份更新后的`Dockerfile`构建镜像：
 
@@ -70,7 +70,7 @@ $ docker build . -t demo:0.0.1-SNAPSHOT
 
 由于使用 Maven 本地镜像的缘故，构建速度得到极大提升；而且因为使用了构建镜像，`demo`服务的依赖包并不存在于镜像中，`demo`服务的镜像大小由 191MB，降至 103MB。
 
-![shrinked-image-size](/assets/images/0002/shrinked-image-size.png)
+![shrinked-image-size](/assets/images/2019/0002/shrinked-image-size.png)
 
 最终，我们将构建过程整合成一个 Bash 脚本`build-images.sh`：
 

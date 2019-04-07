@@ -66,6 +66,6 @@ $ docker images | grep demo
 
 该镜像大小与[使用 multi-stage 构建 Docker 镜像](/2019/03/29/0004-multi-stage-build)通过编写`Dockerfile`构建得到的镜像大小完全一致——都为 103MB。
 
-![image-size](/assets/images/0006/image-size.png)
+![image-size](/assets/images/2019/0006/image-size.png)
 
 使用 Maven Docker 插件构建镜像的过程也是一个 multi stage build 过程，第一阶段通过`./mvnw package`命令构建`demo`服务的 jar 包；第二阶段将`demo`服务的 jar 包置于由`baseImg`指定的基础镜像中。

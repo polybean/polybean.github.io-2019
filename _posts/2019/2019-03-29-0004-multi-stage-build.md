@@ -94,15 +94,15 @@ RUN --mount=target=/root/.m2,type=cache \
 
 运行`build-image.sh`，切换至 buildkit 之后的首次镜像构建（尚不存在缓存）仍然需要下载完整的依赖包，在我本机测试，因受限于中国移动的网速，该过程耗时 535.6 秒（近十分钟）：
 
-![buildkit-first-build](/assets/images/0004/buildkit-first-build.png)
+![buildkit-first-build](/assets/images/2019/0004/buildkit-first-build.png)
 
 而因为完成第一次构建之后，由于缓存层的存在，第二次构建时，不必下载完整依赖，该过程仅耗时 6.4 秒：
 
-![buildkit-second-build](/assets/images/0004/buildkit-second-build.png)
+![buildkit-second-build](/assets/images/2019/0004/buildkit-second-build.png)
 
 检查镜像大小：
 
-![image-size](/assets/images/0004/image-size.png)
+![image-size](/assets/images/2019/0004/image-size.png)
 
 仍然维持在 103M。至此，已经成功完成 multi-stage 镜像构建的改造。
 

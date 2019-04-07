@@ -51,7 +51,7 @@ CMD java -jar demo-0.0.1-SNAPSHOT.jar
 
 刷新工程，即可看到 Maven Help Plugin 提供的若干`help`命令：
 
-![maven-help-plugin](/assets/images/0003/maven-help-plugin.png)
+![maven-help-plugin](/assets/images/2019/0003/maven-help-plugin.png)
 
 获取工程名的命令为：
 
@@ -69,7 +69,7 @@ $ ./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout
 
 运行结果如下：
 
-![project-name-and-version](/assets/images/0003/project-name-and-version.png)
+![project-name-and-version](/assets/images/2019/0003/project-name-and-version.png)
 
 把这一成果集成到`build-images.sh`中：
 
