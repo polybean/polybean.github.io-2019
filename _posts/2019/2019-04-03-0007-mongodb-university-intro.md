@@ -7,7 +7,7 @@ MongoDB 是一个优秀的非关系型数据库，有广泛的使用场景。学
 
 集豆博客将推出系列专辑，涵盖以下课程的习题解析：
 
-- M001: MongoDB Basics
+- [M001: MongoDB Basics](/albums/M001)
 - M103: Basic Cluster Administration
 - M121: The MongoDB Aggregation Framework
 - M201: MongoDB Performance
