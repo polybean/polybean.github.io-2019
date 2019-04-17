@@ -21,7 +21,7 @@ ls: /var/lib/docker: No such file or directory
 $ docker run --rm -it -v /:/vm-root alpine:edge sh
 ```
 
-其中挂载选项`-v /:/vm-root`指定了将 DOCKER_HOST 的`/`（不是 macOS 的`/`，小心 😄）目录挂载至容器的`/vm-root`目录，而后，我们在容器命令行中访问`/vm-root/var/lib/docker`即可查看 Docker 的数据目录。这种方法会有额外的镜像（`alpine:edge`）下载和存储开销。更为直接的方法是直接进入 hyperkit 虚拟机：
+其中挂载选项`-v /:/vm-root`指定了将 DOCKER_HOST 的`/`目录挂载至容器的`/vm-root`目录，而后，我们在容器命令行中访问`/vm-root/var/lib/docker`即可查看 Docker 的数据目录。这种方法会有额外的镜像（`alpine:edge`）下载和存储开销。更为直接的方法是直接进入 hyperkit 虚拟机：
 
 ```bash
 $ screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
