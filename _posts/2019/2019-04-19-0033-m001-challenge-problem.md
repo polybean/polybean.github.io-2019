@@ -16,7 +16,11 @@ Connect to our class Atlas cluster from the mongo shell or Compass and view the 
 
 ## 解析
 
-查询条件：`{ results: { $elemMatch: { $gte: 70, $lt: 80 }}}`
+查询条件：
+
+```json
+{ "results": { "$elemMatch": { "$gte": 70, "$lt": 80 } } }
+```
 
 ![](/assets/images/2019/0033/answer.png)
 

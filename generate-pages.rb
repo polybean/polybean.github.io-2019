@@ -27,8 +27,8 @@ EOF
 ALBUM_TEMPLATE = ERB.new <<-EOF
 ---
 layout: default
-title: <%= album %>
-album: <%= album %>
+title: "<%= album %>"
+album: "<%= album %>"
 ---
 
 <div>
@@ -45,11 +45,11 @@ album: <%= album %>
 EOF
 
 system <<~EOF
-  cd #{PROJECT_BASE}
-  mkdir -p #{PROJECT_BASE}/albums
+         cd #{PROJECT_BASE}
+         mkdir -p #{PROJECT_BASE}/albums
   rm -fr albums/* tags/*
   bundle exec jekyll build
-EOF
+       EOF
 
 tags_page = Nokogiri::HTML(open("#{PROJECT_BASE}/_site/tags.html"))
 tags_page.css(".wrapper a code nobr").each do |el|
