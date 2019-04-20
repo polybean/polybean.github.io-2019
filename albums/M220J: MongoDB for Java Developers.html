@@ -1,0 +1,17 @@
+---
+layout: default
+title: "M220J: MongoDB for Java Developers"
+album: "M220J: MongoDB for Java Developers"
+---
+
+<div>
+<h1>专辑·{{ page.album }}</h1>
+  {% assign album = site.posts | where: "album", "M220J: MongoDB for Java Developers" %}
+  <ul>
+  {% for post in album %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+      {{ post.description }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>
