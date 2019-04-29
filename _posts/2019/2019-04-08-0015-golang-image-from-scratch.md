@@ -84,7 +84,7 @@ ENTRYPOINT ["/bin/demo"]
 
 ```bash
 # path=0015-golang-image-from-scratch
-$ build build . -t demo:0.0.1
+$ docker build . -t demo:0.0.1
 ```
 
 启动 Go 语言编写的 demo 镜像：
